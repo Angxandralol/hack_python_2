@@ -17,5 +17,4 @@ def fn_hack_1(s):
             i = 1
         else: i += 1
         txt += letter
-    result = txt
-    return result
+    return txt
