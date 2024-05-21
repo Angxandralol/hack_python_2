@@ -10,5 +10,14 @@ text: ["a","b"] output => ["2","1"]
 
 def fn_hack_8(s):
     result = s
-    #...
-    return result
+    len_result = len(result)
+    txt = []
+    if len_result % 2 == 0:
+        for i in range(1, len_result + 1): txt.append(str(i))
+    else:
+        i = 1
+        for letter in result: 
+            txt.append(letter + '-' + str(i))
+            i += 1
+    txt.reverse()
+    return txt
